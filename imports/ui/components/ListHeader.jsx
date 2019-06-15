@@ -200,7 +200,7 @@ export default class ListHeader extends BaseComponent {
   render() {
     const { editing } = this.state;
     return this.renderRedirect() || (
-      <nav className="list-header">
+      <nav className="list-header shadow">
         {editing ? this.renderEditingHeader() : this.renderDefaultHeader()}
         <form className="todo-new input-symbol" onSubmit={this.createTodo}>
           <input
